@@ -28,12 +28,26 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-# Set hosts to allow any app on Heroku and the local testing URL
-ALLOWED_HOSTS = ['.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','.eba-dpqphuvu.us-west-2.elasticbeanstalk.com']
 
 
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+#
+#
+# SESSION_COOKIE_SECURE = True
+#
+# SECURE_SSL_REDIRECT = True
+#
+# SECURE_SSL_REDIRECT = True
+#
+# CSRF_COOKIE_SECURE = True
+#
+# SECURE_HSTS_SECONDS = 30000
+#
+# SECURE_HSTS_PRELOAD= True
+#
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
